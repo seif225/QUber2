@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "402475387603",
+    "firebase_url": "https://quber2.firebaseio.com",
+    "project_id": "quber2",
+    "storage_bucket": "quber2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402475387603:android:e837d9e0c0bece81",
+        "android_client_info": {
+          "package_name": "com.example.quber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402475387603-npn07pc2f6767o9gkmu0khhdhclu2n6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quber",
+            "certificate_hash": "9f76b8f9a701db203471e62d4717db8299480024"
+          }
+        },
+        {
+          "client_id": "402475387603-e1hrqilshc22i0avukc0ep78ldgd3rl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx4rxNfYalYvqoHG_Hr_Lc5RlVsmJPsFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402475387603-e1hrqilshc22i0avukc0ep78ldgd3rl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
