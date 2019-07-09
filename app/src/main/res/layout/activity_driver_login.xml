@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="1">
 
         <EditText
-            android:id="@+id/password_edit_text"
+            android:id="@+id/password_edit_text_driver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
@@ -112,7 +112,7 @@
 
 
     <Button
-        android:id="@+id/driver_login_button"
+        android:id="@+id/driver_login_button_driver_activity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -121,7 +121,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-
         android:background="#E7E7E7"
         android:padding="8dp"
         android:text="login as a driver"

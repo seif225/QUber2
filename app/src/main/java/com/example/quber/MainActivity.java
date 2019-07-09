@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.quber.DriverMapPackage.DriverMapActivity;
 import com.example.quber.WelcoomePackage.WelcomeActivity;
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,16 +30,25 @@ public class MainActivity extends AppCompatActivity {
                 }
                 finally {
 
-
-                    Intent i = new Intent(getBaseContext(), WelcomeActivity.class);
-                    // i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(i);
-
+                    if (FirebaseAuth.getInstance().getCurrentUser()==null) {
+                        Intent i = new Intent(getBaseContext(), WelcomeActivity.class);
+                        // i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(i);
+                    }
+                    else sendUserToDriverMap();
                 }
             }
         };
 
         thread.start();
+
+    }
+
+    private void sendUserToDriverMap() {
+
+        Intent i = new Intent(getBaseContext(), DriverMapActivity.class);
+        // i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
 
     }
 
